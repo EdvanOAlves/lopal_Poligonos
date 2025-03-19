@@ -1,10 +1,10 @@
 package br.com.engsenai.model;
 
 public class Retangulo {
-	double base;
-	double altura;
-	double area;
-	double perimetro;
+	private double base;
+	private double altura;
+	private double area;
+	private double perimetro;
 
 	public void setLados(double base, double altura) {
 		if (base <= 0 || altura <= 0) {
