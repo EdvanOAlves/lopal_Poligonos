@@ -3,6 +3,7 @@ package br.com.engsenai.dao;
 import java.util.Scanner;
 
 import br.com.engsenai.model.Circulo;
+import br.com.engsenai.ui.Menu;
 
 public class CirculoDao {
 	public static void criarCirculo() {
@@ -21,7 +22,11 @@ public class CirculoDao {
 		circulo.mostrarFicha();
 		
 		//Encerrando o reader
-		reader.close();
+		//reader.close();
+		
+
+		//Perguntando ao usuário se deseja continuar com a execução
+		Menu.continuar(reader);
 	}
 
 }

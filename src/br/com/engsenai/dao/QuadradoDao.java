@@ -3,6 +3,7 @@ package br.com.engsenai.dao;
 import java.util.Scanner;
 
 import br.com.engsenai.model.Quadrado;
+import br.com.engsenai.ui.Menu;
 
 public class QuadradoDao {
 	public static void criarQuadrado() {
@@ -21,7 +22,12 @@ public class QuadradoDao {
 		quadrado.mostrarFicha();
 		
 		//Encerrando o reader
-		reader.close();
+		//reader.close();
+		
+		//Perguntando ao usuário se deseja continuar com a execução
+		Menu.continuar(reader);
+		
+		
 	}
 
 }

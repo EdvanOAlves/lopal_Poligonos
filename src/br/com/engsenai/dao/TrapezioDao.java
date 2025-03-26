@@ -3,6 +3,7 @@ package br.com.engsenai.dao;
 import java.util.Scanner;
 
 import br.com.engsenai.model.Trapezio;
+import br.com.engsenai.ui.Menu;
 
 public class TrapezioDao {
 	public static void criarTrapezio() {
@@ -31,8 +32,9 @@ public class TrapezioDao {
 		//Print de informações
 		trapezio.mostrarFicha();
 		
-		//Encerrando o reader
-		reader.close();
+		//Perguntando ao usuário se deseja continuar com a execução
+		Menu.continuar(reader);
+
 	}
 
 }

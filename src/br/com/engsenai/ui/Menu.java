@@ -10,13 +10,13 @@ public class Menu {
 		System.out.println("---------------------------");
 		System.out.println("Calculadora de Polígonos");
 		System.out.println("---------------------------");
-		System.out.println("Você chegou em uma boa hora, \nagora podemos calcular cinco \ntipos de polígonos diferentes:\n");
-		System.out.println("1- Quadrado (NOVO)");
-		System.out.println("2- Retângulo (NOVO)");
-		System.out.println("3- Trapézio (NOVO)");
-		System.out.println("4. Circunferência (NOVO)");
-		System.out.println("5- Triângulo (NOVO)");
-		System.out.println("6- Sair");
+		System.out.println("Você chegou em uma boa hora, \nagora podemos calcular vários \npolígonos sem precisar reiniciar o programa:\n");
+		System.out.println("1- Quadrado");
+		System.out.println("2- Retângulo");
+		System.out.println("3- Trapézio");
+		System.out.println("4. Circunferência");
+		System.out.println("5- Triângulo");
+		System.out.println("6- Sair(NOVO)");
 		System.out.println("---------------------------");
 		System.out.print("Escolha uma opção (1-6): ");
 		
@@ -38,12 +38,34 @@ public class Menu {
 			CirculoDao.criarCirculo();
 		}
 		
-		else if (opcao ==5) {
+		else if (opcao == 5) {
 			TrianguloDao.criarTriangulo();
+		}
+		
+		else if (opcao == 6) {
+			System.out.println("Encerrando...");
 		}
 		
 		else{
 			System.out.println("Essa função ainda não foi implementada");
+		}
+	}
+	
+	public static void continuar(Scanner reader) {
+		
+		System.out.println("---------------------------");
+		System.out.println("Efetuar outro cálculo? (S para sim, qualquer outra tecla para sair)");
+		System.out.println("---------------------------");
+		
+		String resposta = reader.next();
+		System.out.println(resposta);
+		
+		if ((resposta.toUpperCase()).equals("S")) {
+			Menu.mostrarMenu();
+		}
+		else{
+			reader.close();
+			System.out.println("Encerrando...");
 		}
 	}
 	

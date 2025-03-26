@@ -11,6 +11,8 @@ public class Arquimedes {
 
 		
 		Menu.mostrarMenu();
+		
+		System.out.println("Goodbye World!");
 
 	}
 	

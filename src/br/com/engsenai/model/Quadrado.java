@@ -2,6 +2,7 @@
 package br.com.engsenai.model;
 
 public class Quadrado {
+	
 	double lado;
 	double area;
 	double perimetro;
@@ -23,6 +24,7 @@ public class Quadrado {
 	private void calcPerimetro() {
 		this.perimetro = lado * 4;
 	}
+	
 
 	public void mostrarFicha() {
 		if (area <= 0) {
