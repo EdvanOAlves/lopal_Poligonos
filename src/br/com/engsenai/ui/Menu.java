@@ -53,14 +53,20 @@ public class Menu {
 	
 	public static void continuar(Scanner reader) {
 		
-		System.out.println("---------------------------");
-		System.out.println("Efetuar outro cálculo? (S para sim, qualquer outra tecla para sair)");
-		System.out.println("---------------------------");
+		String resposta = "";
+		while (!resposta.equals("S") && !resposta.equals("N")) {
+			System.out.println("---------------------------");
+			System.out.println("Efetuar outro cálculo? \n(S/N)");
+			System.out.println("---------------------------");
+			
+			resposta = reader.next();
+			resposta = resposta.toUpperCase();
+			
+		}
 		
-		String resposta = reader.next();
-		System.out.println(resposta);
 		
-		if ((resposta.toUpperCase()).equals("S")) {
+		
+		if (resposta.equals("S")) {
 			Menu.mostrarMenu();
 		}
 		else{

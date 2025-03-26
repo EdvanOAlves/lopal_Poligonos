@@ -1,8 +1,8 @@
 package br.com.engsenai.model;
 
 public class Circulo {
-	double raio;
-	double area;
+	private double raio;
+	private double area;
 
 	public void setRaio(double raio) {
 		if (raio <= 0) {

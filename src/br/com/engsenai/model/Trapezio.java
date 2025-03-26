@@ -1,10 +1,10 @@
 package br.com.engsenai.model;
 
 public class Trapezio {
-	double baseMenor;
-	double baseMaior;
-	double altura;
-	double area;
+	private double baseMenor;
+	private double baseMaior;
+	private double altura;
+	private double area;
 
 	public void setLados(double baseMenor, double baseMaior, double altura) {
 		if (baseMenor <= 0 || baseMaior <= 0 || altura <= 0) {

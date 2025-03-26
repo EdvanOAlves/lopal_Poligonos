@@ -1,9 +1,9 @@
 package br.com.engsenai.model;
 
 public class Triangulo {
-	double base;
-	double altura;
-	double area;
+	private double base;
+	private double altura;
+	private double area;
 
 	public void setLados(double base, double altura) {
 		if (base <= 0 || altura <= 0) {

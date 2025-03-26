@@ -3,9 +3,9 @@ package br.com.engsenai.model;
 
 public class Quadrado {
 	
-	double lado;
-	double area;
-	double perimetro;
+	private double lado;
+	private double area;
+	private double perimetro;
 
 	public void setLado(double lado) {
 		if (lado <= 0) {
